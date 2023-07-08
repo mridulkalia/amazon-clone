@@ -17,11 +17,11 @@
   <body>
     <header id="top">
       <div id="nav-icon-out">
-        <div id="nav-icon" class="hover"></div>
+        <div style="cursor: pointer" id="nav-icon" class="hover"></div>
       </div>
       <!-- box2 -->
       <div id="nav-add-out">
-        <div id="nav-add-in" class="hover">
+        <div style="cursor: pointer" id="nav-add-in" class="hover">
           <p id="add1">Deliver to</p>
           <div id="nav-add-logo">
             <i style="padding-left: 5px" class="fa-solid fa-location-dot"></i>
@@ -31,45 +31,59 @@
       </div>
       <!-- box3 -->
       <div id="nav-search-out">
-        <select name="amazon" id="amazon">
+        <select style="cursor: pointer" name="amazon" id="amazon">
           <option value="Items">All</option>
         </select>
         <input type="text" id="nav-search" placeholder="Search Amazon" />
-        <div id="nav-search-icon">
+        <div style="cursor: pointer" id="nav-search-icon">
           <i style="color: #0f1111" class="fa-solid fa-magnifying-glass"></i>
         </div>
       </div>
       <!-- box4 -->
       <div id="flag-out">
-        <div id="flag" class="hover">
+        <div style="cursor: pointer" id="flag" class="hover">
           <img id="india" src="download.png" alt="india" />
           <p id="lang">EN</p>
+          <i id="drop-down1" class="fa-solid fa-caret-down"></i>
         </div>
       </div>
       <!-- box5 -->
       <div id="sign-out-out">
-        <div id="sign-out" class="hover">
+        <div style="cursor: pointer" id="sign-out" class="hover">
           <p style="padding-left: 7px" id="sign1">Hello,sign in</p>
-          <p style="padding-left: 7px" id="sign2">Accounts & Lists</p>
+          <p style="padding-left: 7px" id="sign2">
+            Accounts & Lists<i
+              id="drop-down2"
+              class="fa-solid fa-caret-down"
+            ></i>
+          </p>
         </div>
       </div>
       <!-- box6 -->
       <div id="return-out">
-        <div id="return" class="hover">
+        <div style="cursor: pointer" id="return" class="hover">
           <p style="padding-left: 7px" id="return1">Returns</p>
           <p style="padding-left: 7px" id="return2">& Orders</p>
         </div>
       </div>
       <!-- box7 -->
-      <div id="cart-out"></div>
-      <div id="cart" class="hover">
-        <i style="font-size: 27px" class="fa-solid fa-cart-shopping"></i>
-        <p id="para" style="font-weight: 700">Cart</p>
+      <div id="cart-out">
+        <div style="cursor: pointer" id="cart" class="hover">
+          <i
+            style="padding-left: 4px; font-size: 27px"
+            class="fa-solid fa-cart-shopping"
+          ></i>
+          <p id="para" style="font-weight: 700">Cart</p>
+          <span id="count">0</span>
+        </div>
       </div>
     </header>
     <div id="lower-nav">
       <div id="a1" class="hover">
-        <i style="font-size: 18px" class="fa-solid fa-bars"></i>
+        <i
+          style="cursor: pointer; font-size: 18px"
+          class="fa-solid fa-bars"
+        ></i>
         <a style="padding-left: 4px" href="#">All</a>
       </div>
       <div id="a2" class="hover">
@@ -88,69 +102,132 @@
         <a href="#">Sell</a>
       </div>
       <div id="a7">
-        <a href="#">Shop deals in Electronics</a>
+        <a href="#">Shop Valentine's Day</a>
       </div>
     </div>
     <!-- hero section -->
-    <div id="hero">
-      <div id="hero-in">
-        <p style="color: black">
-          You are on amazon.com. You can also shop on Amazon India for millions
-          of products with fast local delivry.
-          <a style="color: #007185" href="https://www.amazon.in/"
-            >Click here to go to amazon.in</a
-          >
-        </p>
-      </div>
-    </div>
-    <div class="top"></div>
-    <!-- shoping section -->
-    <div class="shop-out">
-      <div id="box1">
-        <p class="b">Home & Appliances</p>
-        <img class="img" src="box1_image.jpg" alt="Home & Appliances" />
-      </div>
-      <div id="box2">
-        <p class="b">Health & Personal Care</p>
-        <img class="img" src="box2_image.jpg" alt="Health & Personal Care" />
-      </div>
-      <div id="box3">
-        <p class="b">Furniture & Home Decor</p>
-        <img class="img" src="box3_image.jpg" alt="Furniture & Home Decor" />
-      </div>
-      <div id="box4">
-        <div id="box-41">
-          <pre class="b">
-      Sign in for the best 
-      expirience</pre
-          >
-          <button id="butt">Sign in securely</button>
+    <section class="sec1">
+      <!-- central message starts -->
+      <div class="central-data">
+        <div id="hero-out">
+          <div id="hero-in">
+            <p style="color: black">
+              You are on amazon.com. You can also shop on Amazon India for
+              millions of products with fast local delivry.
+              <a style="color: #007185" href="https://www.amazon.in/"
+                >Click here to go to amazon.in</a
+              >
+            </p>
+          </div>
         </div>
-        <div id="box-415"></div>
-        <div id="box-42"></div>
+        <!-- shoping box section -->
+        <div class="shop-out">
+          <div id="box1">
+            <p class="b">Home & Appliances</p>
+            <img class="img" src="box1_image.jpg" alt="Home & Appliances" />
+            <p class="see-more">See more</p>
+          </div>
+          <div id="box2">
+            <p class="b">Health & Personal Care</p>
+            <img
+              class="img"
+              src="box2_image.jpg"
+              alt="Health & Personal Care"
+            />
+            <p class="see-more">Shop now</p>
+          </div>
+          <div id="box3">
+            <p class="b">Furniture & Home Decor</p>
+            <img
+              class="img"
+              src="box3_image.jpg"
+              alt="Furniture & Home Decor"
+            />
+            <p style="padding-left: 25px" class="see-more">See all deals</p>
+          </div>
+          <div id="box4">
+            <div id="box-41">
+              <pre class="b">
+        Sign in for the best 
+        expirience</pre
+              >
+              <button style="cursor: pointer" id="butt">
+                Sign in securely
+              </button>
+            </div>
+            <div id="box-415"></div>
+            <div id="box-42"></div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="top"></div>
+      <!-- images animating section -->
+      <div class="image-box">
+        <div class="slide">
+          <img src="si1.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="si2.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="si3.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="si4.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
     <div class="shop-out">
       <div id="box1">
         <p class="b">Beauty Picks</p>
         <img class="img" src="box5_image.jpg" alt="Beauty Picks" />
+        <p class="see-more">See more</p>
       </div>
       <div id="box2">
         <p class="b">Pet Care</p>
         <img class="img" src="box6_image.jpg" alt="Pet Care" />
+        <p class="see-more">See more</p>
       </div>
       <div id="box3">
         <p class="b">New Arrival in Toys</p>
         <img class="img" src="box7_image.jpg" alt="New Arrival in Toys" />
+        <p class="see-more">See more</p>
       </div>
       <div id="box1">
         <p class="b">Discover Fashion Trends</p>
         <img class="img" src="box8_image.jpg" alt="Discover Fashion Trends" />
+        <p class="see-more">See more</p>
       </div>
     </div>
     <div class="top"></div>
+    <section class="sec2">
+      <div class="l-btn">
+        <i style="color: #0f1111a4" class="fa-solid fa-chevron-left"></i>
+      </div>
+      <div class="rbtn">
+        <i style="color: #0f1111a4" class="fa-solid fa-chevron-right"></i>
+      </div>
+      <p style="padding-left: 18px" class="b">Exclusive Amazon Products</p>
+      <div class="image-box2">
+        <img
+          style="padding-left: 18px"
+          src="./scrollbar/download (1).jpg"
+          alt=""
+        /><img src="./scrollbar/images (2).jpg" alt="" /><img
+          src="./scrollbar/download.jpg"
+          alt=""
+        /><img src="./scrollbar/images (3).jpg" alt="" /><img
+          src="./scrollbar/images (1).jpg"
+          alt=""
+        /><img src="./scrollbar/images (4).jpg" alt="" /><img
+          src="./scrollbar/images (5).jpg"
+          alt=""
+        /><img src="./scrollbar/images.jpg" alt="" />
+      </div>
+    </section>
+    <div class="top"></div>
     <div id="top2"></div>
+    <!-- footer starts -->
     <div id="mid">
       <hr id="done" />
       <p style="font-weight: 520; font-size: 0.85rem; color: #0f1111">
@@ -241,5 +318,6 @@
         India
       </button>
     </div>
+    <script src="Project.js"></script>
   </body>
 </html>
