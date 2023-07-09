@@ -526,7 +526,7 @@ img {
     overflow-y: hidden;
     position: relative;
     height: 295px;
-    width: 100%;
+    width: 1471px;
     background-color: white;
 }
 .image-box2{
@@ -730,4 +730,179 @@ li {
     height: 54px;
     width: 98px;
     margin-right: 90px;
+}
+
+/* Code for the sidebar */
+
+#sidebar{
+    background-color: white;
+    height: 1103px;
+    width: 365px;
+    position: absolute;
+    z-index: 101;
+    box-shadow: 2px 2px 30px black;
+    transform: translateX(-1539px);
+}
+#xmark{
+    color: white;
+    position: absolute;
+    font-size: 35px;
+    top: 7px;
+    left: 380px;
+    z-index: 100;
+    cursor: pointer;
+}
+#black-bg{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 1174px;
+    z-index: 100;
+    position: absolute;
+    left: 365px;
+    
+}
+#top-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#222f3d ;
+    box-sizing: border-box;
+    padding-right: 145px;
+    height: 50px;
+    width: 100%;
+}
+#top-side p{
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.wrap{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+} 
+
+.heading{
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #111111;
+}
+#symbol{
+    color: #11111185;
+    position: absolute;
+    right: 1190px;
+}
+#topp1{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+    padding-left: 30px;
+}
+#topp1 div{
+    height: 40px;
+    color: #111111;
+}
+#topp2{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+    padding-left: 30px;
+}
+#topp2 div{
+    height: 40px;
+    color: #111111;
+}
+#topp3{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+    padding-left: 30px;
+}
+#topp3 div{
+    height: 40px;
+    color: #111111;
+}
+#topp4{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+    padding-left: 30px;
+}
+#topp4 div{
+    height: 40px;
+    color: #111111;
+}
+#india2{
+    padding-right: 7px;
+    height: 13px;
+    width: 20px;
+}
+
+.lists{
+    height: 385px;
+    width: 500px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 14px;
+    position: absolute;
+    z-index: 101;
+    right: 70px;
+    top: 53px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    display: none;
+}
+#triangle{
+    color: white;
+    position: absolute;
+    font-size: 29px;
+    z-index: 101;
+    left: 366px;
+    top: -15px;
+}
+#l-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+}
+#l-down{
+    display: flex;
+    justify-content: center;
+}
+.l1{
+    height: 100%;
+    width: 236px;
+}
+.l2{
+    height: 290px;
+    width: 236px;
+    border-left: 1px solid black;
+    padding-left: 20px;
+}
+.l-head{
+    color: #0f1111;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.l-tags{
+    color: #444444;
+    line-height: 22px;
+    font-size: smaller;
+}
+.l-tags:hover{
+    text-decoration: underline;
+    color: rgba(255, 98, 0, 0.877);
+    cursor: pointer;
+}
+#butt3{
+    width: 218.4px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    color: #0f1111;
+    margin-bottom: 5px;
+    background-color: #fed611;
+    cursor: pointer;
+}
+.stop-scroll{
+    overflow: hidden;
+    height: 100%;
 }
